@@ -1,7 +1,11 @@
 # python 3.10...
 from flask import Flask, render_template, url_for
+from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
+
+# for the form.hidden method in register.html
+app.config['SECRET_KEY']='thisisfirstflaskapp'
 
 @app.route('/')
 @app.route('/home')
@@ -18,7 +22,8 @@ def login():
 
 @app.route('/register')
 def register():
-    return render_template('register.html', title="register")
+    form = RegistrationForm
+    return render_template('register.html', title="register", form=form)
 
 @app.route('/book')
 def book():

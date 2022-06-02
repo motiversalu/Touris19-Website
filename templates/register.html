@@ -7,14 +7,20 @@
   }
 </style>
 
+
+<div>
 <h2 class="pagename" style="color:white">User Registration</h2>
 <p style="text-align:center; color:white">Please fill the form to create an account</p>
-<form action="/action_page.php" class="form" style="">
+<form method="POST" action="" class="form">
+  {{form.hidden_tag()}}
   <div class="imgcontainer">
     <img src="{{url_for('static', filename='img_avatar1.png')}}" alt="Avatar" class="avatar">
   </div>
   <div class="container2">
     <hr>
+    {{form.username.label(class="form-control-label")}}
+    {{form.username(class="form-control form-control-lg")}}
+
     <label for="email"><b>Email</b></label>
     <input type="text" placeholder="Enter Email" name="email" id="email" required>
 
@@ -33,5 +39,6 @@
     <p>Already have an account? <a href="/login">Sign in</a>.</p>
   </div>
 </form>
+</div>
 
 {% endblock content %}
