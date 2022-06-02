@@ -4,6 +4,12 @@ from forms import RegistrationForm, LoginForm
 
 app = Flask(__name__)
 
+#database
+#locally
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///users.db'
+#remotely on heroku
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://javafnceaeavbn:8eeef72532c5549ff93caa0ac78648d098f4ce052c07468036625a1c2ccd384d@ec2-44-196-174-238.compute-1.amazonaws.com:5432/d2ckobdiu8np3e'
+
 # for the form.hidden method in register.html
 app.config['SECRET_KEY']='thisisfirstflaskapp'
 
