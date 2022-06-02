@@ -4,18 +4,7 @@
     <list default="true" id="63a6d9b2-7e4d-4cd5-8277-59115f5f2dbe" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app.py" beforeDir="false" afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/about.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/about.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/accra.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/accra.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/afadja.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/afadja.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/bosomtwe.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bosomtwe.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/boti.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/boti.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/elmina.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/elmina.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/flag.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/flag.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/kakum.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/kakum.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/kwame.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/kwame.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/larabanga.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/larabanga.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/layout.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/layout.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/register.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/register.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />

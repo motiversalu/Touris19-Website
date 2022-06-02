@@ -28,12 +28,8 @@ def login():
 
 @app.route('/register')
 def register():
-    form = RegistrationForm
-    return render_template('register.html', title="register", form=form)
+    return render_template('register.html', title="register")
 
-@app.route('/book')
-def book():
-    return render_template('book.html', title="book")
 
 @app.route('/sites')
 def sites():
@@ -66,7 +62,7 @@ def boti():
 
 @app.route('/flag')
 def flag():
-    return render_template("flag.html", title="flag staff house")
+    return render_template("flag.html", title="jubilee house")
 
 @app.route('/larabanga')
 def larabanga():
