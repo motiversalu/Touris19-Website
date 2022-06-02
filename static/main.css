@@ -1,0 +1,215 @@
+body {
+  background: #fafafa;
+  color: #333333;
+  margin-top: 5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #444444;
+}
+
+.view-details{
+background-color: gold;
+border-radius: 20%;
+}
+
+/*side bar texts */
+.list-group-item list-group-item-light, list-group, content-section{
+align-text:center;
+align:center;
+}
+
+.bg-steel {
+  /*background-color: #5f788a;*/
+  background-color: #ffe033;
+}
+
+.site-header .navbar-nav .nav-link {
+  /*color: #cbd5db;*/
+  color: black;
+}
+
+.site-header .navbar-nav .nav-link:hover {
+  color: #ffffff;
+}
+
+.site-header .navbar-nav .nav-link.active {
+  font-weight: 500;
+}
+
+.content-section {
+  background: #ffffff;
+  padding: 10px 20px;
+  border: 1px solid #dddddd;
+  border-radius: 3px;
+  margin-bottom: 5px;
+  margin-left: 150px;
+  margin-top: 100px;
+}
+
+/* top sites text and label */
+.top-sites-text{
+color:white;
+background-color:black;
+}
+
+.top-sites-label{
+color: white;
+}
+
+a:hover{
+        color:white;
+        font-style: bold;
+        background: grey;
+        }
+
+a:visited{
+        font-color: pink;
+        background: grey;
+        }
+
+        a:active{
+        background: purple;
+        }
+
+
+.pagename{
+margin: 10px;
+text-align: center;
+color: green;
+}
+
+.book-label{
+background-color: gold;
+width: 100%;
+text-align: center;
+}
+
+.form{
+position: relative;
+z-index: 1;
+}
+
+/* styling for forms */
+/* login form */
+form {
+border: 3px solid #f1f1f1;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 30%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.form{
+background-color: rgba(255, 217, 0, .9);
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+
+/* register form */
+/* Add padding to containers */
+.container2 {
+  padding: 16px;
+  /*background-color: white;*/
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Overwrite default styles of hr */
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for the submit button */
+.registerbtn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.registerbtn:hover {
+  opacity: 1;
+}
+
+/* Add a blue text color to links
+a {
+  color: dodgerblue;
+} */
+
+/* Set a grey background color and center the text of the "sign in" section */
+.signin {
+  background-color: #f1f1f1;
+  text-align: center;
+}

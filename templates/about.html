@@ -1,0 +1,211 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column2 {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+@media screen and (max-width: 650px) {
+  .column2 {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.container2 {
+  padding: 0 16px;
+}
+
+.container2::after, .row2::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+</style>
+
+<h2 class="pagename">About - Touris19</h2>
+
+<div style="align-text:center; border:1px solid gold">
+    <pre style="font-family:Times roman; font-size:20px; font-style:italic; text-align:center; overflow:auto">
+      <h2 style="color:gold; display:inline">Touris19</h2> is a project that is designed to bring ease and convenience to tourists touring in Ghana.
+      Through this site, tourists will get information about some typical tourist sites.
+      Services offered include booking a tour at these sites.
+      - Come, journey here and have your experience to tell!
+    </pre>
+  </div>
+<hr>
+  <strong><h2 style="text-align:center; color:white; background-color:gold; padding:10px 5px 10px 5px">MEET THE TEAM</h2></strong>
+
+<div class="row2">
+  <div class="column2">
+    <div class="card">
+      <img src="{{url_for('static', filename='IMG-20211023-WA0010.jpg')}}" alt="Project Manager, Salifu" style="width:100%">
+      <div class="container2">
+        <h2>Salifu Tahiru</h2>
+        <p class="title">Project Manager</p>
+        <p>Learning is the only thing that never stops being fun!</p>
+        <p>brainstormbright@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="{{url_for('static', filename='boakyeyiadom.jpeg')}}" alt="Mobile App Engineer, Boakye Yiadom" style="width:100%; height:100%">
+      <div class="container2">
+        <h2>Boakye Yiadom</h2>
+        <p class="title">Mobile App Engineer</p>
+        <p>Passionate, hardworking, a team player. Link up for your mobile app solutions!</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Frontend Engineer, Quao Alexandra" style="width:100%">
+      <div class="container2">
+        <h2>Quao Alexandra</h2>
+        <p class="title">Frontend Engineer</p>
+        <p>Passionate about designing. Let's express what you want in designs!.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row2">
+  <div class="column2">
+    <div class="card">
+      <img src="{{url_for('static', filename='IMG-20211023-WA0013.jpg')}}" alt="Product Owner, Clement" style="width:100%">
+      <div class="container2">
+        <h2>Clement Baafi</h2>
+        <p class="title">Product Owner</p>
+        <p>Building and rebuilding. Great team player. Let's get to work!</p>
+        <p>example@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="UI/UX Engineer,Forkuo Moses" style="width:100%">
+      <div class="container">
+        <h2>Forkua Moses</h2>
+        <p class="title">UI/UX Engineer</p>
+        <p>Expressive and experience. Designs that communicate right to your audience!</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Backend Engineer, Seth Atalo" style="width:100%">
+      <div class="container2">
+        <h2>Seth Atalo</h2>
+        <p class="title">Backend Engineer</p>
+        <p>Attentive, smart and a genius. Let's engineer your app backend!</p>.</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="row2">
+  <div class="column2">
+    <div class="card">
+      <img src="{{url_for('static', filename='IMG-20211023-WA0013.jpg')}}" alt="Mobile App Engineer, Boakye Yiadom" style="width:100%">
+      <div class="container2">
+        <h2>Jeremiah Ofosu</h2>
+        <p class="title">Mobile App Engineer</p>
+        <p>Your mobile app problems, my solutions!</p>
+        <p>example@gmail.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="/w3images/team2.jpg" alt="Quality Assurance Engineer, Michael Oduro" style="width:100%">
+      <div class="container">
+        <h2>Michael Oduro</h2>
+        <p class="title">Quality Assurance Engineer</p>
+        <p>Quality is my hallmark!</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="column2">
+    <div class="card">
+      <img src="{{url_for('static', filename='joseph.jpeg')}}" alt="Backend Engineer, Joseph Yamoah" style="width:100%">
+      <div class="container2">
+        <h2>Joseph Yamoah</h2>
+        <p class="title">Backend Engineer</p>
+        <p>Hardworking. Let's get this backend engine done!</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="column2" style="">
+    <div class="card">
+      <img src="/w3images/team3.jpg" alt="Frontend Engineer, Carmen Baffowa" style="width:100%">
+      <div class="container2">
+        <h2>Carmen Baffowa</h2>
+        <p class="title">Frontend Engineer</p>
+        <p>Confident, elegant, innovative!</p>
+        <p>example@example.com</p>
+        <p><button class="button">Contact</button></p>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

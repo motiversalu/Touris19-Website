@@ -1,0 +1,86 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.top-sites-label{
+color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.column:hover{
+border: 1px solid grey;
+}
+
+.top-sites-text{
+font-size: 12px;
+margin: 5px;
+}
+</style>
+
+<h2 class="pagename">Elmina Castle</h2>
+
+<div class="row">
+<div class="column">
+    <a href="/elmina"><img src="{{url_for('static', filename='eliminaCastle.jpg')}}" style="width:100%"></a>
+  </div>
+    <div class="column">
+    <a href="/elmina"><img src="{{url_for('static', filename='elmina2.jpg')}}" style="width:100%"></a>
+  </div>
+    <div class="column">
+    <a href="/elmina"><img src="{{url_for('static', filename='elmina3.jpg')}}" style="width:100%"></a>
+  </div>
+    <p>Elmina Castle was erected by the Portuguese in 1482 as Castelo de São Jorge da Mina, also known as Castelo da Mina or simply Mina, in present-day Elmina, Ghana. It was the first trading post built on the Gulf of Guinea, and the oldest European building in existence south of the Sahara.
+        First established as a trade settlement, the castle later became one of the most important stops on the route of the Atlantic slave trade.
+        The Dutch seized the fort from the Portuguese in 1637, after an unsuccessful attempt in 1596, and took over all of the Portuguese Gold Coast in 1642. The slave trade continued under the Dutch until 1814. In 1872, the Dutch Gold Coast, including the fort, became a possession of Great Britain.
+        The Gold Coast, which is now Ghana, gained its independence in 1957 from Britain, and had control of the castle. Elmina Castle is a historical site, and was a major filming location for Werner Herzog's 1987 drama film Cobra Verde.
+        The castle is recognized by UNESCO as a World Heritage Site.
+        It is also a major tourists' attraction in the central region of Ghana. <a href="https://en.wikipedia.org/wiki/Elmina_Castle" target="_blank">Wikipedia</a>
+    </p>
+        <label class="book-label">Book</label>
+</div>
+
+<p style="text-align:center"><i>book for your tour</i></p>
+<form action="" method="">
+  <label for="placename">Where to:</label>
+  <select id="placename">
+      <option value="Mount Afadja">Mount Afadja</option>
+      <option value="Kwame Nkrumah">Kwame Nkrumah Memorial Park</option>
+      <option value="Kakum National Park">Kakum National Park</option>
+      <option value="Lake Bosomtwe">Lake Bosomtwe</option>
+      <option value="Elmina Castle">Elmina Castle</option>
+      <option value="Accra">Accra</option>
+      <option value="Boti Waterfalls">Boti Waterfalls</option>
+      <option value="Jubilee House">Jubilee House</option>
+      <option value="Larabanga Mosque">Larabanga Mosque</option>
+      </select> <br>
+  <label for="howmany">How many:</label>
+  <input type="number" min="1" max="5" placeholder="number of persons" id="howmany" name="howmany"><br><br>
+  <label for="arrivals">Arrival date:</label>
+  <input type="date" placeholder="" id="arrivals" name="arrivals"><br>
+    <label for="leaving">Leaving Date:</label>
+  <input type="date" placeholder="date of departure" id="leaving" name="leaving"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

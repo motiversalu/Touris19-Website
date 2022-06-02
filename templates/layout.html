@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='main.css') }}">
+
+    <link rel="canonical" href="%layout.html%">
+    <!--<script async src="https://telegram.org/js/telegram-widget.js?19" data-telegram-discussion="touris19" data-comments-limit="10" data-colorful="1"></script>-->
+
+
+    {% if title %}
+    <title>Touris19 - {{ title }}</title>
+    {% else %}
+    <title>Touris19</title>
+    {% endif %}
+
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar navbar-expand-md navbar-dark bg-steel fixed-top">
+          <div class="container">
+            <a class="navbar-brand mr-4" href="/"><h1 style="display:inline; color:white">TOURIS19</h1></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggle" aria-controls="navbarToggle" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarToggle">
+              <div class="navbar-nav mr-auto">
+                <a class="nav-item nav-link" href="/">Home</a>
+                <a class="nav-item nav-link" href="/login">Login</a>
+
+              <!-- Other site header links -->
+                <a class="nav-item nav-link" href="/register">Register</a>
+                <a class="nav-item nav-link" href="/sites">Sites</a>
+                <a class="nav-item nav-link" href="/about">About</a>
+              </div>
+            </div>
+          </div>
+            <input type="text" placeholder="search tourist sites" style="margin-left:20px; background-color:white; border-radius:30px" class="nav-item nav-link" href="/about">
+            <input type="button" value="Search" style="position:relative; right:80px; bottom:40px; top:-5px">
+        </nav>
+      </header>
+
+      <main role="main" class="container">
+        <div class="row">
+          <div class="col-md-8">
+            {% block content %} {% endblock %}
+          </div>
+            <!-- sidebar -->
+          <div class="col-md-4">
+            <div class="content-section">
+              <h2>Ghana</h2>
+                <p class='text-muted'>a beautiful home in Africa.</p>
+                <ul class="list-group">
+                  <li class="list-group-item list-group-item-light">Beautiful Places</li>
+                  <li class="list-group-item list-group-item-light">Beautiful People</li>
+                  <li class="list-group-item list-group-item-light">Entertainment</li>
+                  <li class="list-group-item list-group-item-light">Adventure</li>
+                  <li class="list-group-item list-group-item-light">etc</li>
+                </ul>
+            </div>
+          </div></div></main>
+
+
+
+    <!-- whatsapp widget for chat -->
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-d555c6d7-3f5b-48fb-9f2a-9d0af58cfc03"></div>
+
+    <!-- telegram widget for chat --
+    <script src="https://apps.elfsight.com/p/platform.js" defer></script>
+<div class="elfsight-app-b551757d-21d2-44f6-bcf1-6a4747c46ec2"></div> -->
+
+
+
+     <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+    <!-- footer -->
+    <br>
+    <div class="footer" style="border:1px solid white; display:absolute; left:50%; right:50%; justify-content:center; background-color:gold">
+
+        <div style="margin-left:20px; float:center">
+
+        </div>
+        <div style="float:left; margin-left:10px; margin-right:40px" >
+           <a href="\login">Login</a>
+           <a href="\register">Register</a>
+           <a href="\sites">Sites</a>
+        </div>
+        <p style="text-align:center;"><em><i>Touris19, 2022. tourist destinations in Ghana</i></em></p>
+</div>
+</body>
+</html>

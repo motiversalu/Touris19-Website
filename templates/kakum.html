@@ -1,0 +1,84 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.top-sites-label{
+color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.column:hover{
+border: 1px solid grey;
+}
+
+.top-sites-text{
+font-size: 12px;
+margin: 5px;
+}
+</style>
+
+<h2 class="pagename">Kakum National Park</h2>
+
+<div class="row">
+<div class="column">
+    <a href="#"><img src="{{url_for('static', filename='kakum1.jpg')}}" style="width:100%"></a>
+  </div>
+    <div class="column">
+    <a href="#" target="_top"><img src="{{url_for('static', filename='kakum2.jpg')}}" style="width:100%"></a>
+  </div>
+    <div class="column">
+    <a href="#" target="_top"><img src="{{url_for('static', filename='kakum3.jpg')}}" style="width:100%"></a>
+  </div>
+    <p>Kakum National Park, in Ghana's Central Region, is 375 square kilometers in size and is located along the coast.
+It was established as a reserve in 1931 and only became a national park in 1992.
+It is one of only three places in Africa with a 350-meter-long canopy bridge that connects seven tree tops.
+Diana monkey, big bongo antelope, yellow-backed duiker, and African elephant are among the park's most threatened animals.
+Bird Life International has designated it as an Important Bird Area, with the bird area fully encompassing the park area. <a href="https://en.wikipedia.org/wiki/Kakum_National_Park" target="_blank">Wikipedia</a> </p>
+    <label class="book-label">Book</label>
+</div>
+
+<p style="text-align:center"><i>book for your tour</i></p>
+<form action="" method="">
+  <label for="placename">Where to:</label>
+  <select id="placename">
+      <option value="Mount Afadja">Mount Afadja</option>
+      <option value="Kwame Nkrumah">Kwame Nkrumah Memorial Park</option>
+      <option value="Kakum National Park">Kakum National Park</option>
+      <option value="Lake Bosomtwe">Lake Bosomtwe</option>
+      <option value="Elmina Castle">Elmina Castle</option>
+      <option value="Accra">Accra</option>
+      <option value="Boti Waterfalls">Boti Waterfalls</option>
+      <option value="Jubilee House">Jubilee House</option>
+      <option value="Larabanga Mosque">Larabanga Mosque</option>
+      </select> <br>
+  <label for="howmany">How many:</label>
+  <input type="number" min="1" max="5" placeholder="number of persons" id="howmany" name="howmany"><br><br>
+  <label for="arrivals">Arrival date:</label>
+  <input type="date" placeholder="" id="arrivals" name="arrivals"><br>
+    <label for="leaving">Leaving Date:</label>
+  <input type="date" placeholder="date of departure" id="leaving" name="leaving"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}

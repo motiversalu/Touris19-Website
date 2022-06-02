@@ -1,0 +1,110 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.top-sites-label{
+color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.column:hover{
+border: 1px solid grey;
+}
+
+.top-sites-text{
+font-size: 12px;
+margin: 5px;
+}
+</style>
+
+    <h2 class="pagename">Explore Sites</h2>
+
+    <!-- sites -->
+<div class="row" style="position:relative; z-index:1">
+  <div class="column">
+    <a href="/kwame"><img src="{{url_for('static', filename='kwameMemorial.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Kwame Nkrumah Memorial Park</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">A place devoted to the founding leader</p>
+  </div>
+  <div class="column">
+    <a href="/kakum"><img src="{{url_for('static', filename='kakum.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Kakum National Park</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">Wild life, Canopy walkway and Forest</p>
+  </div>
+  <div class="column">
+    <a href="/bosomtwe" ><img src="{{url_for('static', filename='lakeBosomtwe.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Lake Bosomtwe</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="font-size:12px">Natural lake with refreshment and lodging</p>
+  </div>
+</div>
+
+<br>
+
+<div class="row">
+  <div class="column">
+    <a href="/elmina"><img src="{{url_for('static', filename='eliminaCastle.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Elmina Castle</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">Marks the history of slave trade and colonial relic</p>
+  </div>
+  <div class="column">
+    <a href="/accra"><img src="{{url_for('static', filename='accra.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Accra</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">Makola Market, beaches & Moseums</p>
+  </div>
+  <div class="column">
+    <a href="/boti"><img src="{{url_for('static', filename='botiWaterfalls.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Boti Waterfalls</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="font-size:12px">High cascade & a swimming area</p>
+  </div>
+</div>
+
+<div class="row">
+  <div class="column">
+    <a href="/flag"><img src="{{url_for('static', filename='ghana.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Jubilee House</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">A palace serving as the residence and office for the sitting president</p>
+  </div>
+  <div class="column">
+    <a href="/larabanga"><img src="{{url_for('static', filename='larabangaMosque.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Larabanga Ancient Mosque</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="">Architecture and History</p>
+  </div>
+  <div class="column">
+    <a href="/afadja"><img src="{{url_for('static', filename='afadja1.jpg')}}" style="width:100%"></a>
+    <label class="top-sites-label">Mount Afadja</label>
+    <a href="/kwame"><button class="view-details">VIEW DETAILS|BOOK</button></a>
+    <p class="top-sites-text" style="font-size:12px">Very popular forested mountain for hiking and climbing</p>
+  </div>
+</div>
+
+{% endblock content %}

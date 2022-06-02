@@ -1,0 +1,93 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+.top-sites-label{
+color: black;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 500px) {
+  .column {
+    width: 100%;
+  }
+}
+.column:hover{
+border: 1px solid grey;
+}
+
+.top-sites-text{
+font-size: 12px;
+margin: 5px;
+}
+</style>
+
+<h2 class="pagename">Dr. Kwame Nkrumah Memorial Park & Mausoleum</h2>
+
+<div class="row">
+<div class="column">
+    <a href="#" target="_top"><img src="{{url_for('static', filename='kwameMemorial.jpg')}}" style="width:100%"></a>
+    <!-- <label class="top-sites-label">Dr. Kwame Nkrumah Memorial Park & Mausoleum</label> -->
+  </div>
+    <div class="column">
+    <a href="#" target="_top"><img src="{{url_for('static', filename='kwame2.jpg')}}" style="width:100%"></a>
+  </div>
+    <div class="column">
+    <a href="#" target="_top"><img src="{{url_for('static', filename='kwame3.jpg')}}" style="width:100%"></a>
+  </div>
+    <p>The Kwame Nkrumah Mausoleum and memorial park is located in downtown Accra, the capital of Ghana.
+    It is named after Ghana's first president, Kwame Nkrumah.
+The monument complex, which is located on the former British colonial polo grounds in Accra, was dedicated in 1992.
+It has a total area of five acres.
+The bodies of Kwame Nkrumah and his wife Fathia Nkrumah are interred in the mausoleum built by Don Arthur. It is the location where Nkrumah declared Ghana's independence.
+A museum on the property displays artifacts from various stages of his life.
+The structure is designed to resemble an upside-down sword, which is a symbol of peace in Akan culture.
+The tomb is covered in Italian marble from top to bottom, with a black star at the apex to represent unification.
+The interior features marble floors and a marble grave marker that looks like a small mastaba, surrounded by river-washed rocks.
+The burial is illuminated by a skylight at the top of the mausoleum.
+Water, a symbol of life, surrounds the mausoleum.
+        <a href="https://en.wikipedia.org/wiki/Kwame_Nkrumah_Mausoleum" target="_blank">Wikipedia</a>
+    </p>
+    <label class="book-label">Book</label>
+</div>
+
+<p style="text-align:center"><i>book for your tour</i></p>
+<form action="" method="">
+  <label for="placename">Where to:</label>
+  <select id="placename">
+      <option value="Mount Afadja">Mount Afadja</option>
+      <option value="Kwame Nkrumah">Kwame Nkrumah Memorial Park</option>
+      <option value="Kakum National Park">Kakum National Park</option>
+      <option value="Lake Bosomtwe">Lake Bosomtwe</option>
+      <option value="Elmina Castle">Elmina Castle</option>
+      <option value="Accra">Accra</option>
+      <option value="Boti Waterfalls">Boti Waterfalls</option>
+      <option value="Jubilee House">Jubilee House</option>
+      <option value="Larabanga Mosque">Larabanga Mosque</option>
+      </select> <br>
+  <label for="howmany">How many:</label>
+  <input type="number" min="1" max="5" placeholder="number of persons" id="howmany" name="howmany"><br><br>
+  <label for="arrivals">Arrival date:</label>
+  <input type="date" placeholder="" id="arrivals" name="arrivals"><br>
+    <label for="leaving">Leaving Date:</label>
+  <input type="date" placeholder="date of departure" id="leaving" name="leaving"><br>
+    <input type="submit" value="Submit">
+</form>
+{% endblock %}
